@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmx version="1.4">
+  <header creationtool="" creationtoolversion=""
+    segtype="phrase" o-tmf="" adminlang="en"
+    srclang="en" datatype="PlainText" o-encoding="UTF-8" />
+  <body>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>international business machines</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>International Business Machines</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Lee Zhang</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Lijing Zhang</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>alley</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>胡同</seg>
+      </tuv>
+    </tu>
+  </body>
+</tmx>
