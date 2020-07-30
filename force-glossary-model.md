@@ -277,7 +277,7 @@ To build a `forced glossary` custom model,
     The following command deletes the translation model with model ID `$MODELID`.
 
     ```
-    $ curl -X DELETE --user "apikey:$apikey" "$url/v3/models/$MODELID?version=2018-05-01"
+    curl -X DELETE --user "apikey:$apikey" "$url/v3/models/$MODELID?version=2018-05-01"
     ```
 
 
