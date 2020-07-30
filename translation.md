@@ -53,7 +53,25 @@ To test drive `Translator` API,
     }
     ```
 
-1.  Translate `Hello, world!` to Chinese by calling `Translator` API.
+1. The translation command returns a **list**. In the above example, two phrases were sent to the translation service and two reesults were returned. If one phrase is sent, the command still returns a **list**.
+
+    ```
+    curl -X POST -u "apikey:$apikey" --header "Content-Type: application/json" --data "{\"text\": [\"Hello, world! \"], \"model_id\":\"en-es\"}" "$url/v3/translate?version=2018-05-01"
+    ```
+
+    It returns
+
+    ```
+    {
+        "translations" : [ {
+            "translation" : "¡Hola, mundo! "
+        } ],
+        "word_count" : 2,
+        "character_count" : 14
+    }
+    ```
+
+1. Translate `Hello, world!` to Chinese by calling `Translator` API.
 
     ```
     curl -X POST -u "apikey:$apikey" --header "Content-Type: application/json" --data "{\"text\": [\"Hello, world! \", \"How are you?\"], \"model_id\":\"en-zh\"}" "$url/v3/translate?version=2018-05-01"
