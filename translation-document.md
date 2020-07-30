@@ -102,7 +102,7 @@ To test drive `Translator` API,
 
 1. Review the translated document `sample-es.pdf`. It is downloaded to the current working folder.
 
-1. Delete documents. To delete the original submission of `sample.pdf` and its Spanish translation, execute the command below. Replace the `e3b10684-83b0-457b-8c74-0774b41ff9e5` with your document ID.
+1. Delete documents. To delete the original submission of `sample.pdf` and its Spanish translation, execute the command below. 
 
     ```
     curl -X DELETE --user "apikey:$apikey" "$url/v3/documents/$DOC_ID?version=2018-05-01"
