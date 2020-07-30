@@ -75,6 +75,7 @@ To test drive `Translator` API,
 
     ```
     curl -X POST -u "apikey:$apikey" --header "Content-Type: application/json" --data "{\"text\": [\"Hello, world! \", \"How are you?\"], \"model_id\":\"en-zh\"}" "$url/v3/translate?version=2018-05-01"
+    ```
 
     The command uses `apikey` for API access credential. It returns the translation result in JSON format. It uses `en-zh` translation model to translate `Hello, World!` and `How are you?` to Chinese.
 
